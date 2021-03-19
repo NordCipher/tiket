@@ -134,7 +134,7 @@
                     <!-- Navbar Menu -->
                     <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                         <li class="dotted-add-button"><a href="<?= BASE_URL ?>tickets/create_new"><i
-                                        class="fa fa-plus-square"></i> New ticket</a></li>
+                                        class="fa fa-plus-square"></i> Нов Тикет</a></li>
 
 
                         <li class="nav-item dropdown">
@@ -176,16 +176,16 @@
 
         </nav>
         <div class="content-inner">
-        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-bottom: 0rem">
+        <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-bottom: 0rem">
         <p>
-            <strong>Hey!</strong> You can automatically create a ticket by sending an email to helpdesk@ticket.tik.co. You can also reply to any ticket thread from the notification email thread itself !
+            <strong>Hey!</strong> You can automatically create a ticket by sending an email to helpdesk@comfy-angel.com.mk You can also reply to any ticket thread from the notification email thread itself !
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">×</span>
             </button>
             </p>
             <hr>
   <p class="mb-0">Note: Email notifications have been disabled in this demo version.</p>
-        </div>
+        </div> -->
             <!-- Page Header-->
             <header class="page-header">
                 <div class="container-fluid">

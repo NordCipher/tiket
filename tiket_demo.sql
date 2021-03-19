@@ -36,7 +36,7 @@ CREATE TABLE `attachments` (
   `uploaded_by` varchar(100) DEFAULT NULL,
   `ref` int(11) DEFAULT NULL,
   `ext` varchar(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `attachments`
@@ -66,7 +66,7 @@ CREATE TABLE `messages` (
   `created` int(11) NOT NULL,
   `type` int(11) DEFAULT '0',
   `to` text
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `messages`
@@ -118,7 +118,7 @@ CREATE TABLE `tickets` (
   `cc` text,
   `data` text,
   `category` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tickets`
@@ -149,7 +149,7 @@ CREATE TABLE `users` (
   `status` int(11) NOT NULL,
   `created` int(11) NOT NULL,
   `updated` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`

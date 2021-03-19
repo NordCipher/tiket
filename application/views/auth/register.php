@@ -13,29 +13,29 @@
 
 			<?php get_msg(); ?>
 			<div class="row">
-				<div class="col-md-6">
+				<!-- <div class="col-md-6">
 					<div class="form-group">
 						<label class=" control-label">Referer ID</label>
 						<input type="text" id="referrer_id" name="referer" class="form-control empty"
 							   placeholder="Referer ID" value="<?= urlencode($data['referer']) ?>" required>
 					</div>
-				</div>
-				<div class="col-md-6">
+				</div> -->
+<!--				 <div class="col-md-6"> 
 					<div class="form-group">
-						<label class=" control-label">Referer Name</label>
+						<label class=" control-label">Referer Name</label>-->
 <!--						<span id="referrer_name"></span>-->
-						<input type="text" id="referrer_name"  class="form-control empty"
+<!--						<input type="text" id="referrer_name"  class="form-control empty"
 							   placeholder="Referer ID"  readonly required>
 					</div>
-				</div>
-				<div class="col-md-6">
+				</div>>-->
+<!--				<div class="col-md-6">
 					<div class="form-group">
-						<label class=" control-label">Referer Mobile</label>
+						<label class=" control-label">Referer Mobile</label>-->
 <!--						<span id="referrer_mobile"></span>-->
-						<input type="text" id="referrer_mobile"  class="form-control empty"
+<!--						<input type="text" id="referrer_mobile"  class="form-control empty"
 							   placeholder="Referer ID" readonly required>
 					</div>
-				</div>
+				</div>-->
 				<div class="col-md-6">
 					<div class="form-group">
 						<label class=" control-label">Member Tree</label><code>*</code>
@@ -93,7 +93,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label class=" control-label">Father's/Spouse Name<code>*</code></label>
+						<label class=" control-label">SURNAME<code>*</code></label>
 						<div>
 							<select name="father_title" id="txttenuretype" class="form-control loan-object col-sm-3" style="float: left;" required onchange="callonchange()" />
 								<option value="">Title</option>
@@ -129,16 +129,16 @@
 					<div class="form-group">
 						<label class=" control-label">Mobile</label><code>*</code>
 						<div>
-							<input type="text" name="country_code" id="country_code" class="form-control loan-object col-sm-3" style="float: left;" value="+91" readonly />
+							<input type="text" name="country_code" id="country_code" class="form-control loan-object col-sm-3" style="float: left;" value="+389" readonly />
 							<input type="text" id="m_mobile_no" name="mobile"
 							class="form-control empty user-existance-validation required col-sm-9"
-							pattern="[6789][0-9]{9}"
-							placeholder="8881686666" minlength="10" maxlength="10">
+						
+							placeholder="70222333" minlength="8" maxlength="8">
 						</div>
 						<span id="mobile_error" style="color:red;"></span>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<!-- <div class="col-md-6">
 					<div class="form-group">
 						<label class=" control-label">State</label>
 						<select class="form-control form-control-select2 select2-hidden-accessible"
@@ -148,9 +148,9 @@
 						</select>
 						<span id="divaor_m_state" style="color:red;"></span>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="col-md-6">
+				<!-- <div class="col-md-6">
 					<div class="form-group">
 						<label class=" control-label">City</label>
 						<select class="form-control form-control-select2 select2-hidden-accessible"
@@ -160,7 +160,7 @@
 						</select>
 						<span id="divor_m_city" style="color:red;"></span>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-md-6">
 					<div class="form-group">
 						<label class=" control-label">Address</label><code>*</code>
@@ -171,7 +171,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label class=" control-label">Aadhaar Number</label><code>*</code>
+						<label class=" control-label">Comfy ID Number</label><code>*</code>
 						<input type="number" id="aadhar" name="aadhar_no"
 							   class="form-control empty user-existance-validation required"
 							   required="" placeholder="499118665246">

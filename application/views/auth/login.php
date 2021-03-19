@@ -32,7 +32,7 @@
                             <div>
                                 <?= get_msg(); ?>
                             </div>
-                            <!-- <a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register.html" class="signup">Signup</a> -->
+                            <a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="auth/register" class="signup">Signup</a>
                         </div>
                         
                     </div>
@@ -41,6 +41,6 @@
         </div>
     </div>
     <div class="copyrights text-center text-dark">
-        <p>Powered by <a href="<?= DEV_COMPANY_URL ?>" class="external"><img src="/assets/img/logo-red.png" width="65" alt="TIKAJ"></a></p>
+        <p>Powered by <a href="<?= DEV_COMPANY_URL ?>" class="external"><img src="/assets/img/logo-red.png" width="65" alt=""></a></p>
     </div>
 </div>

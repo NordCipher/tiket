@@ -1,17 +1,17 @@
 <?PHP
 //Developer Information
 //All product and developer related information.
-define('DEV_COMPANY_NAME', 'TIKAJ');
-define('DEV_COMPANY_EMAIL', 'hello@tikaj.com');
-define('DEV_COMPANY_PHONE', '8881686666');
-define('DEV_COMPANY_SUPPORT_EMAIL', 'support@tikaj.com');
-define('DEV_COMPANY_URL', 'http://www.tikaj.com');
+define('DEV_COMPANY_NAME', 'Comfy Angel IT Support');
+define('DEV_COMPANY_EMAIL', 'supportIT@comfyangel.com.mk');
+define('DEV_COMPANY_PHONE', '+38972550560');
+define('DEV_COMPANY_SUPPORT_EMAIL', 'supportme@comfy-angel.com.mk');
+define('DEV_COMPANY_URL', 'http://supportit.comfy-angel.com.mk');
 define('DEV_COMPANY_LOGO', 'assets/img/logo.png');
 
 /**
  * Product related information
  */
-define('PRODUCT_NAME', 'TIKAJ HELPDESK');
+define('PRODUCT_NAME', 'COMFY ANGEL HELPDESK');
 define('PRODUCT_LOGO', 'assets/img/product-logo.png');
 
 
