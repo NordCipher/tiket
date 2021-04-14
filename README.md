@@ -2,7 +2,7 @@
 
 ## Demo
 
-<div align="center"><a href="https://tiket.app.tik.co/">Visit TIKAJ HELPDESK live demo</a></div>
+<div align="center"><a href="#">Visit  HELPDESK live </a></div>
 
 ### Credentials for logging in
 
@@ -92,4 +92,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-Developed with :heart: at [TIKAJ](https://www.tikaj.com) 
+
