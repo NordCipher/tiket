@@ -51,6 +51,16 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="col-sm-2 form-control-label">Computer Name</label>
+                                            <div class="col-sm-6 select">
+                                                <select name="computer_id" id="computer_id_dd" class="computer_id">
+                                                    <option>Computer Name</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
                                     <!-- <div class="form-group">
                                         <div class="row">
                                             <label class="col-sm-2 form-control-label">Priority</label>
@@ -187,6 +197,7 @@
             var cc = ($("#cc_dd").val()).join(';');
             var severity = parseInt($("#severity_dd").val());
             var category = parseInt($("#category_dd").val());
+            var computer_id = $("#computer_id_dd").val();
             var data = {"attachments": attached_files}
             attached_files = [];
             var fdata = {
@@ -194,6 +205,7 @@
                 'subject': subject,
                 'message': message,
                 'severity': severity,
+                'computer_id': computer_id,                                      
                 'cc': cc,
                 'category': category,
                 'data': data
@@ -211,6 +223,7 @@
                         'subject': subject,
                         'message': message,
                         'severity': severity,
+                        'computer_id': computer_id,                                      
                         'cc': cc,
                         'category': category,
                         'data': data

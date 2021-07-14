@@ -33,6 +33,10 @@ class Ticket extends MY_Controller
         $this->sendJSON($this->Tickets->getAllSeverities());
     }
 
+    public function getComputerIds(){
+        $this->sendJSON($this->Tickets->getAllComputerIds());
+    }
+
     public function upload_attachment()
     {
 

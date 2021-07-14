@@ -66,6 +66,13 @@
                         }
                     },
                     {
+                        title: "Computer Name",
+                        data: "computer_id",
+                        render: function (data) {
+                            return data?('<span class="comp-id" data-value="'+data+'">'):'-';
+                        }
+                    },
+                    {
                         title: "Created By",
                         data: "owner",
                         render: function (data, type, row) {

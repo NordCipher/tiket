@@ -103,6 +103,20 @@ function renderDropdowns(){
 		});
 	}
 
+	if ($('#computer_id_dd').length) {
+		$.get(BASE_URL + '/API/Ticket/getComputerIds', function (data) {
+
+			$('#computer_id_dd').select2({
+				width: 'resolve',
+				data: data.data.map(function (item, index) {
+					return {id: item.value, text: item.label}
+				})
+			});
+
+
+		});
+	}
+
 	if ($('#cc_dd').length) {
 		$.get(BASE_URL + '/API/User/getAll', function (data) {
 			

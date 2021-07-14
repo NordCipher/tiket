@@ -103,7 +103,7 @@ class Ticket_model extends BaseMySQL_model {
     public function create($data)
     {
         
-        $info = getValuesOfKeys($data, array('owner','purpose', 'subject', 'message', 'assign_to', 'assign_on', 'severity', 'priority', 'category', 'cc', 'data'));
+        $info = getValuesOfKeys($data, array('owner','purpose', 'subject', 'message', 'assign_to', 'assign_on', 'severity', 'priority', 'category', 'cc', 'data', 'computer_id'));
         $attachments = $info['data'];
         $info['data'] = json_encode($info['data']);
         if(!$info['owner'])
@@ -177,6 +177,9 @@ class Ticket_model extends BaseMySQL_model {
     }
     public function getAllStatus(){
         return TICKET_STATUS;
+    }
+    public function getAllComputerIds(){
+        return COMPUTER_IDS;
     }
 
     public function get($data)

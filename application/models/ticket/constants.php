@@ -40,3 +40,9 @@ define('TICKET_SEVERITIES', array(
     array('value' => 5, 'label'=> 'Medium'),
     array('value' => 10, 'label'=> 'High')
 ));
+
+$computers = array(); 
+for($i=1; $i<201; $i++){
+    $computers[] = array('value' => $i, 'label'=> "computer_".$i);
+}
+define('COMPUTER_IDS', $computers);
