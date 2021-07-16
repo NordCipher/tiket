@@ -69,7 +69,7 @@
                         title: "Computer Name",
                         data: "computer_id",
                         render: function (data) {
-                            return data?('<span class="comp-id" data-value="'+data+'">'):'-';
+                            return data?('<span class="comp-id" data-value="'+data+'">computer_'+data+'</span>'):'-';
                         }
                     },
                     {

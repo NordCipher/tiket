@@ -40,7 +40,10 @@ class Tabler extends MY_Tabler
         }
 
 
-
+	$computers = array(); 
+	for($i=1; $i<201; $i++){
+   		 $computers[$i] = "computer_".$i;
+	}
         return $this->handler($this->Tickets, __FUNCTION__, array(), array(
             "assign_to" => [
 				"title" => "Assigned To",
@@ -74,8 +77,7 @@ class Tabler extends MY_Tabler
                         "Medium"=>5,
                         "Low" =>0
                     )
-    
-                    ],
+                ],
                 "category" => [
                     "title" => "Category",
                     "type" => "string",
@@ -83,8 +85,8 @@ class Tabler extends MY_Tabler
                 ],
 		"computer_id" => [
                     "title" => "Computer Name",
-                    "type" => "int",
-                    "enum" => array_flip(COMPUTER_IDS)
+                    "type" => "string",
+                    "enum" => array_flip($computers)
                 ]
 
         ),$filter, array(
