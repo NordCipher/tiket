@@ -179,7 +179,7 @@
                                 <tr>
                                     <th>Computer Name</th>
                                     <td><span class="comp-id"
-                                              data-value="<?= isset($info['computer_id']) ? $info['computer_id'] : '-' ?>"></span>
+                                              data-value="<?= isset($info['computer_id']) ? $info['computer_id'] : '-' ?>">computer_<?= isset($info['computer_id']) ? $info['computer_id'] : '-' ?></span>
                                     </td>
                                     <td><a href="Javascript:void(0);" class="edit-ticket-dropdown">Edit</a>
                                         <div class="col-sm-12 select select-ticket-dropdown hide"

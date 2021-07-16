@@ -199,6 +199,14 @@ function renderCustomHTML(){
 			$(this).html('-');
 	});
 
+	$('.comp-id').each(function(elem){
+		var value = $(this).attr('data-value');
+		if(value)
+			$(this).html(getComputerIdIcon($(this).attr('data-value')));
+		else
+			$(this).html('-');
+	});
+
 	$('.rel-time').each(function(elem){
 		var value = parseInt($(this).attr('data-value'));
 		if(value)
@@ -324,6 +332,13 @@ function getCategoryIcon(priority){
 	var priority_map = {0:'Bug', 1:'Feature Request', 2:'Software Troubleshooting', 3: 'Software Troubleshooting',
 	4:'How To', 5:'Password Reset', 6:'Network', 7: 'Hardware', 8: 'Access and Authorization'}
 	return priority_map[parseInt(priority)];
+}
+function getComputerIdIcon(priority){
+	var computer_id_map = {}
+	for (var i=1; i<201; i++){
+		computer_id_map[i-1] = "computer_" + i
+	}
+	return computer_id_map[parseInt(priority)];
 }
 
 function getActivityIconClass(type){

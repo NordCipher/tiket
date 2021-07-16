@@ -80,6 +80,11 @@ class Tabler extends MY_Tabler
                     "title" => "Category",
                     "type" => "string",
                     "enum" => array_flip(TICKET_CATEGORIES)
+                ],
+		"computer_id" => [
+                    "title" => "Computer Name",
+                    "type" => "int",
+                    "enum" => array_flip(COMPUTER_IDS)
                 ]
 
         ),$filter, array(
