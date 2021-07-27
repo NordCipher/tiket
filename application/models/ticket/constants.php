@@ -43,6 +43,6 @@ define('TICKET_SEVERITIES', array(
 
 $computers = array(); 
 for($i=1; $i<201; $i++){
-    $computers[] = array('value' => $i, 'label'=> "computer_".$i);
+    $computers[] = array('value' => $i, 'label'=> "COMFY-ANGEL-".$i);
 }
 define('COMPUTER_IDS', $computers);
