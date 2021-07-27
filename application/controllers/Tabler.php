@@ -42,8 +42,10 @@ class Tabler extends MY_Tabler
 
 	$computers = array(); 
 	for($i=1; $i<201; $i++){
-   		 $computers[$i] = "COMFY-ANGEL-".$i;
+   		 $computers["COMFY-ANGEL-".$i] = $i;
 	}
+	natsort($computers);
+
         return $this->handler($this->Tickets, __FUNCTION__, array(), array(
             "assign_to" => [
 				"title" => "Assigned To",
@@ -86,7 +88,7 @@ class Tabler extends MY_Tabler
 		"computer_id" => [
                     "title" => "Computer Name",
                     "type" => "string",
-                    "enum" => array_flip($computers)
+                    "enum" => $computers
                 ]
 
         ),$filter, array(
