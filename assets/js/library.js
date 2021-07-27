@@ -336,7 +336,7 @@ function getCategoryIcon(priority){
 function getComputerIdIcon(priority){
 	var computer_id_map = {}
 	for (var i=1; i<201; i++){
-		computer_id_map[i] = "COMFY-ANGEL-" + i
+		computer_id_map[i-1] = "COMFY-ANGEL-" + i
 	}
 	return computer_id_map[parseInt(priority)];
 }

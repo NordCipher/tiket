@@ -56,7 +56,7 @@
                                             <label class="col-sm-2 form-control-label">Computer Name</label>
                                             <div class="col-sm-6 select">
                                                 <select name="computer_id" id="computer_id_dd" class="computer_id">
-                                                    <option>Computer Name</option>
+                                                    <option>default: COMFY-ANGEL-0</option>
                                                 </select>
                                             </div>
                                         </div>
