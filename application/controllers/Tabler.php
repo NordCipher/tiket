@@ -42,9 +42,9 @@ class Tabler extends MY_Tabler
 
 	$computers = array(); 
 	for($i=1; $i<201; $i++){
-   		 $computers["COMFY-ANGEL-".$i] = $i;
+   		 $computers["COMFY-ANGEL-".str_pad($i,3,'0',STR_PAD_LEFT)] = $i;
 	}
-	natsort($computers);
+	ksort($computers, SORT_NATURAL);
 
         return $this->handler($this->Tickets, __FUNCTION__, array(), array(
             "assign_to" => [
