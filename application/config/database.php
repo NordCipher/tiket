@@ -78,6 +78,8 @@ $db['default'] = array(
     'hostname' => 'localhost:3306',
 	'username' => 'root',
 	'password' => 'i-0d23a8285af499b0e',
+//	dev
+//	'password' => 'i-0a2fb3ed4ad48ec02',
 	'database' => 'tiket_demo',
 	'dbdriver' => 'mysqli',
     'dbprefix' => '',

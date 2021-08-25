@@ -4,6 +4,8 @@ include_once __DIR__."/constants.permissions.php";
 
 //Root Url of ur site
 define('BASE_URL', 'http://34.247.82.175/');
+// dev
+// define('BASE_URL', 'http://54.194.110.186/');
 
 define('PAGE_LOADER', BASE_URL.'assets/img/loading.webp');
 

@@ -174,6 +174,24 @@
                                         </div>
                                     </td>
                                 </tr>
+
+
+                                <tr>
+                                    <th>Computer Name</th>
+                                    <td><span class="comp-id"
+                                              data-value="<?= isset($info['computer_id']) ? $info['computer_id'] : '-' ?>">COMFY-ANGEL-<?= isset($info['computer_id']) ? $info['computer_id'] : '-' ?></span>
+                                    </td>
+                                    <td><a href="Javascript:void(0);" class="edit-ticket-dropdown">Edit</a>
+                                        <div class="col-sm-12 select select-ticket-dropdown hide"
+                                             style="position: absolute;right:0; margin-top: -25px;">
+                                            <select name="computer_id" id="computer_id_dd" data-id="<?= $info['id'] ?>"
+                                                    data-type="9" class="form-control" style="width: 100%">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <th>Ticket Category</th>
                                     <td><span class="tik-category"
@@ -346,7 +364,7 @@
         });
 
         $('select.form-control').on('change', function () {
-            var intfields = ['severity', 'priority', 'category', 'status'];
+            var intfields = ['severity', 'priority', 'category', 'status', 'computer_id'];
             var field = $(this).attr('name');
             var value = this.value;
             if (intfields.includes(field))
