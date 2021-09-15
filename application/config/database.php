@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => 'i-0a2fb3ed4ad48ec02',
 //	dev
 //	'password' => 'i-0a2fb3ed4ad48ec02',
-	'database' => 'tiket13092021',
+	'database' => 'tiket_demo',
 	'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
