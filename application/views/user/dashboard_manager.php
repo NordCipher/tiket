@@ -10,7 +10,7 @@
                     <div class="pl-3"><strong><span
                                     class="number font-weight-bolder"><?= $stats['total_users'] ?></span></strong>
                         <br>
-                        <span>Total Users</span>
+                        <span>Вкупно корисници</span>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <div class="pl-3"><strong><span
                                     class="number font-weight-bolder"><?= $stats['total_agents'] ?></span></strong>
                         <br>
-                        <span>Total Agents</span>
+                        <span>Вкупно агенти</span>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <div class="pl-3"><strong><span
                                     class="number font-weight-bolder"><?= $stats['total_manager'] ?></span></strong>
                         <br>
-                        <span>Total Managers</span>
+                        <span>Вкупно админи</span>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                     <div class="icon bg-green"><i class="fa fa-tasks"></i></div>
                     <div class="text"><strong><?= $stats['total_tickets'] ?></strong><br>
-                        <small>All Tickets</small>
+                        <small>Сите тикети</small>
                     </div>
                 </div>
             </a>
@@ -58,7 +58,7 @@
                 <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                     <div class="icon bg-orange"><i class="fa fa-ticket"></i></div>
                     <div class="text"><strong><?= $stats['open_tickets'] ?></strong><br>
-                        <small>Open Tickets</small>
+                        <small>Отворени тикети</small>
                     </div>
                 </div>
             </a>
@@ -67,7 +67,7 @@
                 <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                     <div class="icon bg-info"><i class="fa fa-user"></i></div>
                     <div class="text"><strong><?= $stats['assigned_tickets'] ?></strong><br>
-                        <small>Assigned Tickets</small>
+                        <small>Распределени тикети</small>
                     </div>
                 </div>
             </a>
@@ -76,7 +76,7 @@
                 <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                     <div class="icon bg-red"><i class="fa fa-check"></i></div>
                     <div class="text"><strong><?= $stats['closed_tickets'] ?></strong><br>
-                        <small>Closed Tickets</small>
+                        <small>Затворени тикети</small>
                     </div>
                 </div>
             </a>
@@ -92,7 +92,7 @@
             <div class="col-md-7 d-flex">
                 <div class="bar-chart-example card custom-border-radius w-100">
                     <div class="card-header d-flex align-items-center  custom-border-radius">
-                        <h2 class="h3">Ticket Status By Severity</h2>
+                        <h2 class="h3">Статус на тикети</h2>
                     </div>
                     <div class="card-body">
                         <canvas id="severity-bar-graph" height="100"></canvas>
@@ -102,7 +102,7 @@
             <div class="col-lg-5 d-flex">
                 <div class="card custom-border-radius w-100">
                     <div class="card-header d-flex align-items-center  custom-border-radius">
-                        <h2 class="h3">Tickets Status</h2>
+                        <h2 class="h3">Статус на тикети</h2>
                     </div>
                     <div class="work-amount">
                         <div class="card-body">
@@ -110,11 +110,11 @@
                                 <iframe class="chartjs-hidden-iframe" tabindex="-1"
                                         style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
                                 <div class="text">
-                                    <strong><?= $stats['total_tickets'] ?></strong><br><span>Total Tickets</span>
+                                    <strong><?= $stats['total_tickets'] ?></strong><br><span>Вкупно Тикети</span>
                                 </div>
                                 <canvas id="pieChart" height="100"></canvas>
                             </div>
-                            <div class="text-center">Open, Assigned and Closed Tickets Statistics</div>
+                            <div class="text-center">Отворени, Доделени и Затворени тикети </div>
                         </div>
                     </div>
                 </div>
@@ -132,25 +132,25 @@
             <div class="col-lg-12">
                 <div class="recent-updates card custom-border-radius w-100">
                     <div class="card-header d-flex align-items-center  custom-border-radius">
-                        <h2 class="h3">Recent Tickets</h2>
+                        <h2 class="h3">Скорешни тикети</h2>
                     </div>
                     <div class="card-header tab-card-header shadow-none">
                         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link disabled-text  active show" id="one-tab" data-toggle="tab"
-                                   href="#one" role="tab" aria-controls="One" aria-selected="true">Recent Tickets</a>
+                                   href="#one" role="tab" aria-controls="One" aria-selected="true">Скорешни тикети</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled-text" id="two-tab" data-toggle="tab" href="#two"
-                                   role="tab" aria-controls="Two" aria-selected="false">Recent Open Tickets</a>
+                                   role="tab" aria-controls="Two" aria-selected="false">Неодамна отворени тикети</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled-text" id="three-tab" data-toggle="tab" href="#three"
-                                   role="tab" aria-controls="Three" aria-selected="false">Recent Assigned Tickets</a>
+                                   role="tab" aria-controls="Three" aria-selected="false">Неодамна доделени тикети</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled-text" id="four-tab" data-toggle="tab" href="#four"
-                                   role="tab" aria-controls="Four" aria-selected="false">Recent Closed Tickets</a>
+                                   role="tab" aria-controls="Four" aria-selected="false">Неодамна затворени тикети</a>
                             </li>
                         </ul>
                     </div>
@@ -308,7 +308,7 @@
             <div class="col-md-12">
                 <div class="bar-chart-example card custom-border-radius w-100">
                     <div class="card-header d-flex align-items-center  custom-border-radius">
-                        <h2 class="h3">Ticket Status By Priority</h2>
+                        <h2 class="h3">Статус на тикет по приоритет</h2>
                     </div>
                     <div class="card-body">
                         <canvas id="priority-bar-graph" height="90"></canvas>

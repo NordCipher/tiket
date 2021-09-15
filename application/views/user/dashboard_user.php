@@ -7,23 +7,23 @@
         <div class="container">
             <div class="row">
                 <!-- Statistics -->
-                <div class="col-md-3">
+                <a href="<?= BASE_URL ?>tickets/list_all" class="col-md-3">
                     <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                         <div class="icon bg-green"><i class="fa fa-tasks"></i></div>
                         <div class="text"><strong><?= $stats['total_tickets'] ?></strong><br>
                             <small>Сите тикети</small>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="col-md-3">
+                <a href="<?= BASE_URL ?>tickets/my_tickets" class="col-md-3">
                     <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                         <div class="icon bg-orange"><i class="fa fa-ticket"></i></div>
                         <div class="text"><strong><?= $stats['open_tickets'] ?></strong><br>
                             <small>Отворени тикети</small>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="col-md-3">
                     <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
@@ -34,14 +34,14 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <a href="<?= BASE_URL ?>tickets/closed_tickets" class="col-md-3">
                     <div class="statistic d-flex align-items-center bg-white has-shadow custom-border-radius">
                         <div class="icon bg-red"><i class="fa fa-check"></i></div>
                         <div class="text"><strong><?= $stats['closed_tickets'] ?></strong><br>
                             <small>Затворени тикети</small>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -60,12 +60,12 @@
                                 <div class="chart text-center">
                                     <iframe class="chartjs-hidden-iframe" tabindex="-1"
                                             style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
-                                    <div class="text"><strong><?= $stats['total_tickets'] ?></strong><br><span>Тотал Тикети</span>
+                                    <div class="text"><strong><?= $stats['total_tickets'] ?></strong><br><span>Вкупно Тикети</span>
                                     </div>
                                     <canvas id="pieChart"
                                             style="display: block; width: height: 100%; height: 100%"></canvas>
                                 </div>
-                                <div class="text-center">Отворени Доделени и Затворени тикети </div>
+                                <div class="text-center">Отворени, Доделени и Затворени тикети </div>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link disabled-text" id="three-tab" data-toggle="tab" href="#three"
-                                       role="tab" aria-controls="Three" aria-selected="false">Скорешно затворени</a>
+                                       role="tab" aria-controls="Three" aria-selected="false">Неодамна затворени</a>
                                 </li>
                             </ul>
                         </div>

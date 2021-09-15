@@ -60,7 +60,7 @@ class Tabler extends MY_Tabler
                     "Closed" =>100
                 )
 
-                ],
+            ],
             "priority" => [
 				"title" => "Priority",
                 "type" => "string",
@@ -70,8 +70,8 @@ class Tabler extends MY_Tabler
                     "Low" =>0
 				)
 
-                ],
-                "severity" => [
+            ],
+            "severity" => [
                     "title" => "Severity",
                     "type" => "string",
                     "enum" => array(
@@ -79,17 +79,17 @@ class Tabler extends MY_Tabler
                         "Medium"=>5,
                         "Low" =>0
                     )
-                ],
-                "category" => [
+            ],
+            "category" => [
                     "title" => "Category",
                     "type" => "string",
                     "enum" => array_flip(TICKET_CATEGORIES)
-                ],
-		"computer_id" => [
+            ],
+		    "computer_id" => [
                     "title" => "Computer Name",
                     "type" => "string",
                     "enum" => $computers
-                ]
+            ]
 
         ),$filter, array(
         ));

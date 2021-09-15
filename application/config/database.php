@@ -77,10 +77,10 @@ $db['default'] = array(
     'dsn'    => '',
     'hostname' => 'localhost:3306',
 	'username' => 'root',
-	'password' => 'i-0d23a8285af499b0e',
+	'password' => 'i-0a2fb3ed4ad48ec02',
 //	dev
 //	'password' => 'i-0a2fb3ed4ad48ec02',
-	'database' => 'tiket_demo',
+	'database' => 'tiket13092021',
 	'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,

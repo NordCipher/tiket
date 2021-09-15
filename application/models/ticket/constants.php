@@ -26,7 +26,7 @@ define('TICKET_STATUS', array(
 ));
 
 define('TICKET_CATEGORIES', array(
-    'Bug', 'Feature requests', 'Software Troubleshooting', 'How to', 'Password Reset', 'Network', 'Hardware', 'Access and Authorization'
+    'Системска грешка', 'Инсталација на апликација', 'Софтерски проблем', 'Како да направам...', 'Лозинка', 'Интернет', 'Хардверски проблем', 'Барање дозвола'
 ));
 
 define('TICKET_PRIORITIES', array(

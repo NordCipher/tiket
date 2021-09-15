@@ -118,12 +118,12 @@ function renderDropdowns(){
 	}
 
 	if ($('#cc_dd').length) {
-		$.get(BASE_URL + '/API/User/getAll', function (data) {
+		$.get(BASE_URL + '/API/User/getAll?type=[60,80,100]', function (data) {
 			
 			$('#cc_dd').select2({
 				width: 'resolve',
 				data: data.data.map(function (item, index) {
-					return {id: item.username, text: item.name}
+					return {id: item.username, text: item.name}					
 				})
 			});
 
@@ -329,8 +329,8 @@ function getStatusIcon(priority){
 }
 
 function getCategoryIcon(priority){
-	var priority_map = {0:'Bug', 1:'Feature Request', 2:'Software Troubleshooting', 3: 'Software Troubleshooting',
-	4:'How To', 5:'Password Reset', 6:'Network', 7: 'Hardware', 8: 'Access and Authorization'}
+	var priority_map = {0:'Системска грешка', 1:'Инсталација на апликација', 2:'Софтерски проблем', 3: 'Како да направам...',
+	4:'Лозинка', 5:'Интернет', 6:'Хардверски проблем', 7: 'Барање дозвола'}
 	return priority_map[parseInt(priority)];
 }
 function getComputerIdIcon(priority){

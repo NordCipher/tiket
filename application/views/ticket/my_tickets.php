@@ -21,7 +21,7 @@
         
         var options = {
             datatable: {
-                order: [[8, 'desc']],
+                order: [[9, 'desc']],
                 columns: [
                     {
                         title: "Ticket No",
