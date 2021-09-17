@@ -77,10 +77,8 @@ $db['default'] = array(
     'dsn'    => '',
     'hostname' => 'localhost:3306',
 	'username' => 'root',
-	'password' => 'i-0a2fb3ed4ad48ec02',
-//	dev
-//	'password' => 'i-0a2fb3ed4ad48ec02',
-	'database' => 'tiket13092021',
+	'password' => '',
+	'database' => 'tiket_demo',
 	'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
