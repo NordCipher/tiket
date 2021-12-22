@@ -22,12 +22,28 @@ $("#change_password").on('click', function(){
                     showNotification('success', 'Password changed successfully');               
                 else
                     showNotification('error', 'Password could not be changed.')
- 
             }
         });
     }
 });
 
+// //OneDrive
+$("#update_profile").on('click', function(){
+    var onedriveVal = 'Agreed';
+    $.ajax({
+        type      : 'POST',
+        url       : BASE_URL + 'API/User/profile_update',
+        dataType  : 'JSON',
+        data      : {'onedrive': onedriveVal },
+        success: function(response)
+        {
+            if(response)
+                showNotification('success', 'OneDrive terms agreed successfully');               
+            else
+                showNotification('error', 'OneDrive terms are not agreed.')
+        }
+    });
+});
 
 // Add user
 $("#add_user").on('click', function(e){

@@ -30,3 +30,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 ## vscode
 .editorconfig
+application/config/client.config.php

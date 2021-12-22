@@ -1,7 +1,5 @@
 <!-- Comment Section-->
-
 <div class="container" style="padding:0; margin-top: -4em;">
-
     <!--Dashboard counts-->
     <section class="dashboard-header no-padding-bottom col-left-no-padding" style="margin-top: 4em;">
         <div class="container">
@@ -63,7 +61,7 @@
                                     <div class="text"><strong><?= $stats['total_tickets'] ?></strong><br><span>Вкупно Тикети</span>
                                     </div>
                                     <canvas id="pieChart"
-                                            style="display: block; width: height: 100%; height: 100%"></canvas>
+                                            style="display: block; width:auto; height: 100%; height: 100%"></canvas>
                                 </div>
                                 <div class="text-center">Отворени, Доделени и Затворени тикети </div>
                             </div>
@@ -165,7 +163,17 @@
             </div>
         </div>
     </section>
-
+        
+    <!-- OneDrive -->
+    <?=
+        $oneDriveVar = $recent['onedrive'];
+        if($oneDriveVar === '0'){
+            header("Location:/user/profile_update");
+            //OneDrive ova moze da ne raboti
+        }
+    ?>
+    <!-- //OneDrive -->
+    
     <script>
         var PIECHART = $('#pieChart');
         var myPieChart = new Chart(PIECHART, {
@@ -201,3 +209,4 @@
         });
 
     </script>
+</div>

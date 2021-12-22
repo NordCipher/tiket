@@ -50,6 +50,12 @@
                                 <div class="col-md-9"><span class="rel-time" data-value="<?= $user_details['updated'] ?>000"></span></div>
                             </div>
                         </div>
+                        <div class="col-md-12 p-2">
+                            <div class="row">
+                                <div class="col-md-3  font-weight-bold">OneDrive terms and conditions</div>
+								<div class="col-md-9"><span><?= $user_details['onedrive'] ?></span></div>
+                            </div>
+                        </div>
                         <hr>
                         <div class="col-md-12 p-2">
                             <div class="row p-2 ">
@@ -57,7 +63,6 @@
                                 <!-- <a href="<?= BASE_URL ?>user/profile_update" class="btn btn-success pull-right">Update Profile</a> -->
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

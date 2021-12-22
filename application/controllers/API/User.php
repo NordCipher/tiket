@@ -68,8 +68,17 @@ class User extends MY_Controller
         $user_id = $this->Users->register($userdata);
         $this->sendJSON(array('result'=>$user_id));
     }
- 
 
+//OneDrive
+    public function profile_update()
+	{
+        $user_id = $this->Session->getLoggedDetails()['id'];
+        $update = ['onedrive' => $this->input->post('onedrive')];
+        $update = $this->Users->update($user_id, $update);
 
+		 $this->sendJSON(array('result' => $update));
+       
+	}
+//OneDrive
 // End of Class
 }

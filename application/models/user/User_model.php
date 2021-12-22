@@ -124,7 +124,13 @@ class User_model extends BaseMySQL_model
 		return $this->db->select($fields)->or_where(array('username' => $text, 'mobile' => $text, 'email' => $text))->limit(1)->get(TABLE_USER)->result_array();
 	}
 
-
+	//OneDrive
+	public function get_user_where($where)
+    {			
+		return $this->db->where($where)
+		->get(TABLE_USERS)->result_array()[0]['onedrive'];		
+    }
+	//OneDrive
 
 	public function getUsersBy($field = null, $value = null)
 	{
@@ -233,5 +239,12 @@ class User_model extends BaseMySQL_model
 
 	}
 
-
+    //OneDrive (UpdateProfile)
+	public function update_profile()
+    {
+        $user_id = $this->Session->getLoggedDetails()['id'];
+		
+        $update = $this->Users->update($user_id, $update);
+		$this->sendJSON(array('result' => $update));
+    }
 }

@@ -37,6 +37,8 @@ class User extends MY_Controller
 		$data['recent']['created'] = $this->Tickets->get_ticket_where_limit(array('owner' => $agent_id), 5);
 		$data['recent']['assigned'] = $this->Tickets->get_ticket_where_limit(array('assign_to' => $agent_id, 'status' => TICKET_STATUS_ASSIGNED), 5);
 		$data['recent']['closed'] = $this->Tickets->get_ticket_where_limit(array('owner' => $agent_id, 'status' => TICKET_STATUS_CLOSED), 5);
+
+		$data['recent']['onedrive'] = $this->Users->get_user_where(array('username'=> $agent_id));
 		$this->render('Dashboard', 'user/dashboard_user', $data);
 	}
 
