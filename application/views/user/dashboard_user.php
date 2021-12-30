@@ -161,18 +161,19 @@
                     </div>
                 </div>
             </div>
+        </div>       
+        <!-- OneDrive -->
+        <div style="display: none;">    
+        <?=
+            $oneDriveVar = $recent['onedrive'];
+            if($oneDriveVar === '0'){
+                header("Location:/user/profile_update");
+                //OneDrive ova moze da ne raboti
+            }
+        ?>
+        <!-- //OneDrive -->
         </div>
     </section>
-        
-    <!-- OneDrive -->
-    <?=
-        $oneDriveVar = $recent['onedrive'];
-        if($oneDriveVar === '0'){
-            header("Location:/user/profile_update");
-            //OneDrive ova moze da ne raboti
-        }
-    ?>
-    <!-- //OneDrive -->
     
     <script>
         var PIECHART = $('#pieChart');
